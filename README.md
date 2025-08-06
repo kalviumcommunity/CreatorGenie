@@ -111,9 +111,4 @@
     **Output:**
     - Final working demo
     - Screenshots or screen recording
-    - README and deploy docs
-
-    ---
-
-
-
+    - README and deploy docs.
