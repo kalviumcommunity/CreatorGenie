@@ -66,6 +66,13 @@ def ai_with_function_calling(user_prompt):
         temperature=0.7,
         max_tokens=500
     )
+    # Log token usage
+    usage = response.get("usage", {})
+    total_tokens = usage.get("total_tokens", "N/A")
+    prompt_tokens = usage.get("prompt_tokens", "N/A")
+    completion_tokens = usage.get("completion_tokens", "N/A")
+    print(f"Token usage: total={total_tokens}, prompt={prompt_tokens}, completion={completion_tokens}")
+
     message = response["choices"][0]["message"]
     if message.get("function_call"):
         fn_name = message["function_call"]["name"]
