@@ -8,7 +8,7 @@ import os
 import openai
 from cot_prompt import SYSTEM_PROMPT
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("AIzaSyCxqnonVJyxlyYAHYbwJAxUelNfkI0EutA")
 
 def get_cot_content_calendar(user_prompt):
     response = openai.ChatCompletion.create(

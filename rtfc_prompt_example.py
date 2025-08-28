@@ -8,7 +8,7 @@ import os
 import openai
 from rtfc_prompt import SYSTEM_PROMPT, USER_PROMPT
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("AIzaSyCxqnonVJyxlyYAHYbwJAxUelNfkI0EutA")
 
 def get_rtfc_content_calendar():
     response = openai.ChatCompletion.create(
