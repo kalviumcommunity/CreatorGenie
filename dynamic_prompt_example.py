@@ -8,7 +8,7 @@ import os
 import openai
 from dynamic_prompt import build_dynamic_prompt
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("AIzaSyCxqnonVJyxlyYAHYbwJAxUelNfkI0EutA")
 
 def get_dynamic_content_calendar(user_prompt, brand_voice, trends):
     system_prompt = build_dynamic_prompt(brand_voice, trends)

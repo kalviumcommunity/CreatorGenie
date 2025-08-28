@@ -8,7 +8,7 @@ import os
 import openai
 from multi_shot_prompt import SYSTEM_PROMPT
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("AIzaSyCxqnonVJyxlyYAHYbwJAxUelNfkI0EutA")
 
 def get_multi_shot_content_calendar(user_prompt):
     response = openai.ChatCompletion.create(
